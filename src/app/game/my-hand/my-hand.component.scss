@@ -1,0 +1,7 @@
+.my-cards-container {
+  border: 2px solid black;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  padding: 10px;
+}

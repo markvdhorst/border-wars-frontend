@@ -1,0 +1,26 @@
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 11% 11% 11% 11% 12% 11% 11% 11% 11%;
+  justify-items: center;
+  align-items: center;
+}
+
+.stone {
+  border: 2px solid black;
+  display: inline-grid;
+  width: 120px;
+  height: 50px;
+  justify-items: center;
+  align-items: center;
+  background-color:black;
+  color: white;
+  font-size: 2em;
+}
+
+@for $i from 1 through 9 {
+  .pos-#{$i} {
+    grid-row: $i;
+  }
+}
+

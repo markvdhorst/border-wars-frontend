@@ -1,0 +1,15 @@
+<h1>Registration</h1>
+<div>
+  <p>Enter your name to register for a game</p>
+  <label for="name-input"></label>
+  <input [(ngModel)]="name" id="name-input" type="text">
+  <button (click)="register()">Register</button>
+</div>
+<p>OR</p>
+<div>
+  <p>Enter a playerUUID to join an existing game</p>
+  <label for="player-uuid-input"></label>
+  <input [(ngModel)]="playerUUID" id="player-uuid-input" type="text">
+  <button (click)="rejoinGame()">Join game</button>
+</div>
+

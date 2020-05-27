@@ -1,0 +1,6 @@
+<div class="borderstone-container">
+  <app-borderstone [clickable]="clickable"
+                   *ngFor="let borderStone of borderStones$ | async"
+                   [borderStone]="borderStone"
+                   (selected)="onBorderStoneSelect($event)"></app-borderstone>
+</div>

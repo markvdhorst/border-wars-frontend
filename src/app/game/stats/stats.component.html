@@ -1,0 +1,8 @@
+<div class="stats">
+  <div *ngIf="isWaitingForSecondPlayer()">Waiting for another player to join you!</div>
+  <div *ngIf="isPlaying() || isFinished()">{{getMyName()}} vs {{getOpponentName()}}</div>
+  <div *ngIf="isPlaying()">
+    <div>{{getTurnText()}}</div>
+  </div>
+  <div *ngIf="isFinished()">{{ getWinnerName() }} won!</div>
+</div>

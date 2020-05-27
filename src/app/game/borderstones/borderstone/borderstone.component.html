@@ -1,0 +1,17 @@
+<div class="container">
+  <app-card
+    *ngFor="let card of opponentCards; let i = index;"
+    class="pos-{{4 - i}}"
+    [card]="card"></app-card>
+  <div [class]="'stone ' + getStoneClass()">
+    {{ borderStone.stoneNumber }}
+  </div>
+  <app-card
+    *ngFor="let card of myCards;  let i = index;"
+    class="pos-{{6 + i}}"
+    [card]="card"></app-card>
+  <button *ngIf="myCards.length != 3 && clickable"
+          class="pos-{{6 + myCards.length}}"
+          (click)="selectBorderStone()">Play selected card here
+  </button>
+</div>

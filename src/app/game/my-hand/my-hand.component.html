@@ -1,0 +1,6 @@
+<div class="my-cards-container">
+  <app-card *ngFor="let card of myHand$ | async"
+            [card]="card"
+            [selected]="isSelectedCard(card)"
+            (select)="selectCard($event)"></app-card>
+</div>

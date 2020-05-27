@@ -1,0 +1,11 @@
+<div class="game-container">
+  <app-stats></app-stats>
+  <div class="board">
+    <app-borderstones
+      [clickable]="canPlayCard()"
+      (borderStoneSelected)="onBorderStoneSelect($event)"></app-borderstones>
+  </div>
+  <div class="hand">
+    <app-my-hand *ngIf="isGamePlayingOrFinished()" (cardSelect)="onCardSelect($event)"></app-my-hand>
+  </div>
+</div>

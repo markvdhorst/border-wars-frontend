@@ -1,0 +1,49 @@
+.card {
+  border: 2px solid black;
+  display: inline-grid;
+  width: 120px;
+  height: 50px;
+  font-size: 2em;
+  margin: 8px 8px 8px 8px;
+
+  &-brown {
+    background-color: saddlebrown;
+    color: white;
+  }
+
+  &-red {
+    background-color: red;
+    color: white;
+  }
+
+  &-blue {
+    background-color: blue;
+    color: white;
+  }
+
+  &-purple {
+    background-color: purple;
+    color: white;
+  }
+
+  &-green {
+    background-color: green;
+    color: white;
+  }
+
+  &-yellow {
+    background-color: yellow;
+  }
+
+  &-selected {
+    border: 6px solid black;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 4px;
+  }
+}
+
+.card-text {
+  margin: auto;
+  line-height: 50px;
+}
